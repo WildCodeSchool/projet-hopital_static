@@ -1521,7 +1521,7 @@ ul.wvrx-menu {
 
 
 .is-menu-default .wvrx-menu > li {
-	display:		block;
+	display:		inline-block;
 	float:          left;
 	
 }
@@ -1533,7 +1533,7 @@ ul.wvrx-menu {
 	float:			none;
 }
 
-.is-menu-default .is-menu-default .wvrx-menu > li > a {
+.is-menu-default .wvrx-menu > li > a {
 	margin:			0;
 	max-width:		100%;
 	word-wrap:		break-word;
