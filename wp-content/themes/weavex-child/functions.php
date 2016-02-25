@@ -332,7 +332,7 @@ function weaverx_enqueue_styles() {
 
 	// Start with the "real" stylesheet (so child theme style.css can override)
 
-	$sheet = get_template_directory_uri() . '/assets/css/style-weaverx'.WEAVERX_MINIFY.'.css';
+	$sheet = get_template_directory_uri() . '/assets/css/style-weaverx.css';
 
 	wp_enqueue_style('weaverx-style-sheet',$sheet,array('weaverx-font-sheet'),WEAVERX_VERSION,'all');
 
