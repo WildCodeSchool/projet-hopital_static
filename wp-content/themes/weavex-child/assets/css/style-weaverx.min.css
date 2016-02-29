@@ -1189,7 +1189,7 @@ a {
 }
 
 .wvrx-menu * {          /* can't be on plain .wvrx-menu - breaks rounded */
-	margin:			0;
+	margin-left:			75px;
 }
 
 
@@ -4501,12 +4501,12 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
     height: 35px;
     position: absolute;
     left: 80%;
-    top: 1.3%;
+    top: 3%;
     z-index: 1;
     -webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
 	border-radius: 40px;
-	background-color: green;
+	background-color: #E2EFF8;
 	text-align: center;
 }
 .second_button {
@@ -4514,12 +4514,12 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
     height: 35px;
     position: absolute;
     left: 80%;
-    top: 2;
+    top: 6%;
     z-index: 1;
     -webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
 	border-radius: 40px;
-	background-color: green;
+	background-color: #E2EFF8;
 	text-align: center;
 }
 .third_button {
@@ -4527,12 +4527,12 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
     height: 35px;
     position: absolute;
     left: 80%;
-    top: 3;
+    top: 9%;
     z-index: 1;
     -webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
 	border-radius: 40px;
-	background-color: green;
+	background-color: #E2EFF8;
 	text-align: center;
 }
 
