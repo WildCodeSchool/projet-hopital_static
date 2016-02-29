@@ -1192,7 +1192,7 @@ a {
 }
 
 .wvrx-menu * {          /* can't be on plain .wvrx-menu - breaks rounded */
-	margin-left:			75px;
+	margin-left:			160px;
 }
 
 
@@ -3838,12 +3838,12 @@ dl.gallery-item {
 	margin-bottom:  0px;
 }
 
-
-#primary-widget-area,
 #secondary-widget-area{
 		height: 300px;
 		overflow-y: scroll;
 }
+#primary-widget-area,
+#secondary-widget-area,
 #footer-widget-area,
 .extra-widget-area,
 .widget-area-footer,

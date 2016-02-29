@@ -143,10 +143,13 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 	<button class="second_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
 		Nous contacter
 	</button>
-		
-	<button class="third_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
-		Recherche
-	</button>
+	
+	<form role="search" method="get" class="search-form" action="http://80.67.190.170/projet-hopital_static/">
+		<label>
+			<input type="search" class="third_button" placeholder="Recherche…" value="" name="s" title="Rechercher&nbsp;:">
+		</label>
+		<input type="submit" class="search-submit" value="Rechercher">
+	</form>
 
 	<div class="modal fade" id="myMapModal">
 	    <div class="modal-dialog">
@@ -245,10 +248,6 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 		<?php echo $title; ?></a></h1>
 
 		<?php /* ======== SEARCH BOX ======== */
-		$hide_search = weaverx_getopt( 'header_search_hide');
-		if ( $hide_search != 'hide' ) { ?>
-			<div id="header-search" class="<?php echo $hide_search; ?>"><?php get_search_form(); ?></div><?php
-		}
 		$hide_tag = weaverx_getopt( 'hide_site_tagline' );
 
 		$tagline =  apply_filters('weaverx_tagline', esc_html(get_bloginfo( 'description' )) );
