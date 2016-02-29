@@ -1189,7 +1189,7 @@ a {
 }
 
 .wvrx-menu * {          /* can't be on plain .wvrx-menu - breaks rounded */
-	margin-left:			160px;
+	margin-left:			4em;
 }
 
 
@@ -4564,3 +4564,5 @@ html, body, #map-canvas  {
     background-size: 1em 1em;
     background-position: 0em 0.6em;
 }
+
+https://d30y9cdsu7xlg0.cloudfront.net/png/64843-200.png
