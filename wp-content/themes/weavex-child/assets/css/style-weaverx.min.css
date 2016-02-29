@@ -4548,5 +4548,5 @@ html, body, #map-canvas  {
 }
 
 .menu-arrows li {
-	list-style-image: url('https://d30y9cdsu7xlg0.cloudfront.net/png/129028-200.png') width:"10px";
+	list-style-image: url('https://d30y9cdsu7xlg0.cloudfront.net/png/129028-200.png'); width:"10px";
 }
