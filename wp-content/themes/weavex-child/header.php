@@ -143,10 +143,13 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 	<button class="second_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
 		Nous contacter
 	</button>
-		
-	<input class="third_button" type="search" class="btn btn-primary btn-lg" placeholder="Rechercher">
-		Recherche
-	</button>
+	
+	<form role="search" method="get" class="search-form" action="http://80.67.190.170/projet-hopital_static/">
+		<label>
+			<input type="search" class="third_button" placeholder="Recherche…" value="" name="s" title="Rechercher&nbsp;:">
+		</label>
+		<input type="submit" class="search-submit" value="Rechercher">
+	</form>
 
 	<div class="modal fade" id="myMapModal">
 	    <div class="modal-dialog">
