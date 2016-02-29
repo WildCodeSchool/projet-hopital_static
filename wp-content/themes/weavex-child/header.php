@@ -122,6 +122,9 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 	$title =  apply_filters('weaverx_site_title', esc_html(get_bloginfo( 'name', 'display' ) ) );
 ?>
 
+	<div class="right_button">
+	</div>
+
 
 <header id="branding" role="banner">
 <?php
@@ -172,10 +175,6 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 		show_media_header(); 			// Plugin support: **Dynamic Headers**
 
 	weaverx_header_widget_area( 'before_header' );           // show header widget area if set to this position
-	?>
-		<div class="right_button">
-		</div>
-	<?php
 
 	/* ======== HEADER IMAGE ======== */
 	global $weaverx_header;
