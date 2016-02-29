@@ -144,7 +144,7 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 		Nous contacter
 	</button>
 		
-	<input class="third_button" type="search" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
+	<input class="third_button" type="search" class="btn btn-primary btn-lg" placeholder="Rechercher">
 		Recherche
 	</button>
 
