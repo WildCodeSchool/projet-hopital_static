@@ -3837,7 +3837,10 @@ dl.gallery-item {
 
 
 #primary-widget-area,
-#secondary-widget-area,
+#secondary-widget-area{
+		height: 300px;
+		overflow-y: scroll;
+}
 #footer-widget-area,
 .extra-widget-area,
 .widget-area-footer,
