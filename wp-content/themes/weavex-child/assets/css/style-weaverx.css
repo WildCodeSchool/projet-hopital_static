@@ -3836,11 +3836,12 @@ dl.gallery-item {
 }
 
 
-#primary-widget-area,
+
 #secondary-widget-area{
 	height: 300px;
 	overflow-y: scroll;
 }
+#primary-widget-area,
 #footer-widget-area,
 .extra-widget-area,
 .widget-area-footer,
