@@ -4492,3 +4492,16 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 .bx-controls-direction {
 	display: none;
 }
+
+.right_button {
+    width: 200px;
+    height: 70px;
+    border: 2px solid black;
+    position: absolute;
+    left: 80%;
+    top: 2%;
+    z-index: 1;
+}
+
+
+
