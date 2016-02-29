@@ -198,6 +198,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 }
 
+
+@media screen and (max-width: 900px) 
+
 .content-2-col,
 .content-3-col,
 .content-2-col-left,
@@ -4497,11 +4500,11 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 }
 
 .first_button {
-    width: 200px;
+    width: 150px;
     height: 35px;
     position: absolute;
     left: 80%;
-    top: 3%;
+    top: 2%;
     z-index: 1;
     -webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
@@ -4510,11 +4513,11 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 	text-align: center;
 }
 .second_button {
-    width: 200px;
+    width: 150px;
     height: 35px;
     position: absolute;
     left: 80%;
-    top: 6%;
+    top: 5%;
     z-index: 1;
     -webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
@@ -4523,11 +4526,11 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 	text-align: center;
 }
 .third_button {
-    width: 200px;
+    width: 150px;
     height: 35px;
     position: absolute;
     left: 80%;
-    top: 9%;
+    top: 8%;
     z-index: 1;
     -webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
