@@ -136,7 +136,7 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 	$title =  apply_filters('weaverx_site_title', esc_html(get_bloginfo( 'name', 'display' ) ) );
 ?>
 
-	<button class="right_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	<button class="right_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
 		Nous situer
 	</button>
 
@@ -164,8 +164,8 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 
 <script type="text/javascript">
 		var map;        
-	            var myCenter=new google.maps.LatLng(48.466089, 1.010948);
-	var marker=new google.maps.Marker({
+	    var myCenter=new google.maps.LatLng(48.466089, 1.010948);
+		var marker=new google.maps.Marker({
 	    position:myCenter
 	});
 
