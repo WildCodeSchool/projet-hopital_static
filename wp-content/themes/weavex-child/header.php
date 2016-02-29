@@ -25,6 +25,14 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 <!--[if IE 9]>	<html class="ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if !(IE 8) | !(IE 9) ]><!-->	<html <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <?php
 	$viewport = "<meta name='viewport' content='width=device-width,initial-scale=1.0' />\n"; /* use full horizontal size on iPad */
@@ -122,7 +130,22 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 	$title =  apply_filters('weaverx_site_title', esc_html(get_bloginfo( 'name', 'display' ) ) );
 ?>
 
-	<div class="right_button">
+	<button class="right_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		Nous situer
+	</button>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="Nous situer" id="myModalLabel">Modal title</h4>
+	      </div>
+	      <div class="modal-body">
+	        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.501545363995!2d1.0087535508059344!3d48.46609263610076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c1f06011b77f%3A0xc382764b99c6e0a!2sH%C3%B4pital+Local!5e0!3m2!1sfr!2sfr!4v1456744044930" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 
 
