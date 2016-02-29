@@ -4511,7 +4511,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
     height: 35px;
     position: absolute;
     left: 80%;
-    top: 1.3%;
+    top: 2;
     z-index: 1;
     -webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
@@ -4524,7 +4524,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
     height: 35px;
     position: absolute;
     left: 80%;
-    top: 1.3%;
+    top: 3;
     z-index: 1;
     -webkit-border-radius: 40px;
 	-moz-border-radius: 40px;

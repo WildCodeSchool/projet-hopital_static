@@ -141,7 +141,7 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 	</button>
 	
 	<button class="second_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
-		Nous concter
+		Nous contacter
 	</button>
 		
 	<button class="third_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
