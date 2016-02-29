@@ -41,6 +41,9 @@ function ewic_generate_slider( $id, $iswidget ) {
 	//Generate HTML Markup	
 	echo '<div id="preloader'.$iswidget.'-'.$id.'" class="sliderpreloader"></div>';
 	echo '<ul style="display:none;" class="bxslider'.$iswidget.'-'.$id.'">';
+	?> 
+
+	<?php
 		foreach( $allimgs as $dat ) {
 			
 			// Timthumb Option @since @since 1.1.17
