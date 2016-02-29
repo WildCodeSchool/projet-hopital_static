@@ -136,8 +136,16 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 	$title =  apply_filters('weaverx_site_title', esc_html(get_bloginfo( 'name', 'display' ) ) );
 ?>
 
-	<button class="right_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
+	<button class="first_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
 		Nous situer
+	</button>
+	
+	<button class="second_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
+		Nous concter
+	</button>
+		
+	<button class="third_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
+		Recherche
 	</button>
 
 	<div class="modal fade" id="myMapModal">
