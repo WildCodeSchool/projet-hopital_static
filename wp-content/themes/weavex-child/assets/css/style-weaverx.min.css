@@ -4547,7 +4547,10 @@ html, body, #map-canvas  {
   height:480px;
 }
 
-.menu-arrows li {
+.is-menu-default .wvrx-menu > li {
 	display: none;
+}
+
+.menu-arrows li {
 	list-style-image: url('http://www.laboiteverte.fr/wp-content/uploads/2015/03/boucle-gif-geometrique-01.gif')
 }
