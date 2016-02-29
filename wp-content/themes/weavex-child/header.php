@@ -25,6 +25,20 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 <!--[if IE 9]>	<html class="ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if !(IE 8) | !(IE 9) ]><!-->	<html <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
+
+<!-- Jquery -->
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <?php
 	$viewport = "<meta name='viewport' content='width=device-width,initial-scale=1.0' />\n"; /* use full horizontal size on iPad */
@@ -122,6 +136,87 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 	$title =  apply_filters('weaverx_site_title', esc_html(get_bloginfo( 'name', 'display' ) ) );
 ?>
 
+	<button class="first_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
+		Nous situer
+	</button>
+	
+	<button class="second_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
+		Nous contacter
+	</button>
+		
+	<button class="third_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
+		Recherche
+	</button>
+
+	<div class="modal fade" id="myMapModal">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	                 <h4 class="modal-title">Nous situer</h4>
+
+	            </div>
+	            <div class="modal-body">
+	                <div class="container">
+	                    <div class="row">
+	                        <div id="map-canvas" class=""></div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- /.modal-content -->
+	    </div>
+    <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+<script type="text/javascript">
+		var map;        
+	    var myCenter=new google.maps.LatLng(48.466089, 1.010948);
+		var marker=new google.maps.Marker({
+	    position:myCenter
+	});
+
+	function initialize() {
+	  var mapProp = {
+	      center:myCenter,
+	      zoom: 14,
+	      draggable: false,
+	      scrollwheel: false,
+	      mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
+	  
+	  map=new google.maps.Map(document.getElementById("map-canvas"),mapProp);
+	  marker.setMap(map);
+	    
+	  google.maps.event.addListener(marker, 'click', function() {
+	      
+	    infowindow.setContent(contentString);
+	    infowindow.open(map, marker);
+	    
+	  }); 
+	};
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+	google.maps.event.addDomListener(window, "resize", resizingMap());
+
+	$('#myMapModal').on('show.bs.modal', function() {
+	   //Must wait until the render of the modal appear, thats why we use the resizeMap and NOT resizingMap!! ;-)
+	   resizeMap();
+	})
+
+	function resizeMap() {
+	   if(typeof map =="undefined") return;
+	   setTimeout( function(){resizingMap();} , 400);
+	}
+
+	function resizingMap() {
+	   if(typeof map =="undefined") return;
+	   var center = map.getCenter();
+	   google.maps.event.trigger(map, "resize");
+	   map.setCenter(center); 
+	}
+</script>
 
 <header id="branding" role="banner">
 <?php
@@ -172,7 +267,6 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 		show_media_header(); 			// Plugin support: **Dynamic Headers**
 
 	weaverx_header_widget_area( 'before_header' );           // show header widget area if set to this position
-
 
 	/* ======== HEADER IMAGE ======== */
 	global $weaverx_header;
