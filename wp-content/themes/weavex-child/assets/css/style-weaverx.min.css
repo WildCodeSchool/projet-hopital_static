@@ -4506,3 +4506,14 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 	background-color: green;
 	text-align: center;
 }
+
+html, body, #map-canvas  {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#map-canvas {
+  width:500px;
+  height:480px;
+}

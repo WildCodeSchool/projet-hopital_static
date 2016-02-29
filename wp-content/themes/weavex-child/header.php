@@ -140,20 +140,75 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 		Nous situer
 	</button>
 
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="Nous situer" id="myModalLabel">Modal title</h4>
-	      </div>
-	      <div class="modal-body">
-	        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.501545363995!2d1.0087535508059344!3d48.46609263610076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c1f06011b77f%3A0xc382764b99c6e0a!2sH%C3%B4pital+Local!5e0!3m2!1sfr!2sfr!4v1456744044930" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+	<div class="modal fade" id="myMapModal">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	                 <h4 class="modal-title">Nous situer</h4>
 
+	            </div>
+	            <div class="modal-body">
+	                <div class="container">
+	                    <div class="row">
+	                        <div id="map-canvas" class=""></div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- /.modal-content -->
+	    </div>
+    <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+<script type="text/javascript">
+		var map;        
+	            var myCenter=new google.maps.LatLng(48.466089, 1.010948);
+	var marker=new google.maps.Marker({
+	    position:myCenter
+	});
+
+	function initialize() {
+	  var mapProp = {
+	      center:myCenter,
+	      zoom: 14,
+	      draggable: false,
+	      scrollwheel: false,
+	      mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
+	  
+	  map=new google.maps.Map(document.getElementById("map-canvas"),mapProp);
+	  marker.setMap(map);
+	    
+	  google.maps.event.addListener(marker, 'click', function() {
+	      
+	    infowindow.setContent(contentString);
+	    infowindow.open(map, marker);
+	    
+	  }); 
+	};
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+	google.maps.event.addDomListener(window, "resize", resizingMap());
+
+	$('#myMapModal').on('show.bs.modal', function() {
+	   //Must wait until the render of the modal appear, thats why we use the resizeMap and NOT resizingMap!! ;-)
+	   resizeMap();
+	})
+
+	function resizeMap() {
+	   if(typeof map =="undefined") return;
+	   setTimeout( function(){resizingMap();} , 400);
+	}
+
+	function resizingMap() {
+	   if(typeof map =="undefined") return;
+	   var center = map.getCenter();
+	   google.maps.event.trigger(map, "resize");
+	   map.setCenter(center); 
+	}
+</script>
 
 <header id="branding" role="banner">
 <?php
