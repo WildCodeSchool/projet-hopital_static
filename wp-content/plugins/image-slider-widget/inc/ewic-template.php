@@ -42,7 +42,7 @@ function ewic_generate_slider( $id, $iswidget ) {
 	echo '<div id="preloader'.$iswidget.'-'.$id.'" class="sliderpreloader"></div>';
 	echo '<ul style="display:none;" class="bxslider'.$iswidget.'-'.$id.'">';
 	?> 
-<div style="width: 200px; height: 200px; border: 2px solid black;"></div>
+
 	<?php
 		foreach( $allimgs as $dat ) {
 			
