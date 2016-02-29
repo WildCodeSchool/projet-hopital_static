@@ -1189,7 +1189,7 @@ a {
 }
 
 .wvrx-menu * {          /* can't be on plain .wvrx-menu - breaks rounded */
-	margin-left:			160px;
+	margin:			0;
 }
 
 
