@@ -26,18 +26,16 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 <!--[if !(IE 8) | !(IE 9) ]><!-->	<html <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 
-<!-- Jquery -->
-<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="wp-content/themes/weavex-child/assets/css/bootstrap.min.css">
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link rel="stylesheet" href="wp-content/themes/weavex-child/assets/css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- Jquery -->
+<script src="wp-content/themes/weavex-child/assets/js/jquery-2.2.1.min.js"></script>
+<script src="wp-content/themes/weavex-child/assets/js/bootstrap.min.js"></script>
 
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <?php
@@ -136,90 +134,45 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 	$title =  apply_filters('weaverx_site_title', esc_html(get_bloginfo( 'name', 'display' ) ) );
 ?>
 
-	<button class="first_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
+	<button class="header_button first_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
 		Nous situer
 	</button>
 	
-	<button class="second_button" type="button" class="btn btn-primary btn-lg">
+	<button class="header_button second_button" type="button" class="btn btn-primary btn-lg">
 		Nous contacter
 	</button>
 	
 	<form role="search" method="get" class="search-form" action="http://80.67.190.170/projet-hopital_static/">
 		<label>
-			<input type="search" class="third_button" placeholder="Recherche…" value="" name="s" title="Rechercher&nbsp;:">
+			<input type="search" class="header_button third_button" placeholder="Recherche…" value="" name="s" title="Rechercher&nbsp;:">
 		</label>
 		<input type="submit" class="search-submit" value="Rechercher">
 	</form>
 
-	<div class="modal fade" id="myMapModal">
-	    <div class="modal-dialog">
-	        <div class="modal-content">
-	            <div class="modal-header">
-	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-	                 <h4 class="modal-title">Nous situer</h4>
-
-	            </div>
-	            <div class="modal-body">
-	                <div class="container">
-	                    <div class="row">
-	                        <div id="map-canvas" class=""></div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <!-- /.modal-content -->
-	    </div>
-    <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal -->
-
+<!-- Script modal -->
 <script type="text/javascript">
-		var map;        
-	    var myCenter=new google.maps.LatLng(48.466089, 1.010948);
-		var marker=new google.maps.Marker({
-	    position:myCenter
-	});
-
-	function initialize() {
-	  var mapProp = {
-	      center:myCenter,
-	      zoom: 14,
-	      draggable: false,
-	      scrollwheel: false,
-	      mapTypeId:google.maps.MapTypeId.ROADMAP
-	  };
-	  
-	  map=new google.maps.Map(document.getElementById("map-canvas"),mapProp);
-	  marker.setMap(map);
-	    
-	  google.maps.event.addListener(marker, 'click', function() {
-	      
-	    infowindow.setContent(contentString);
-	    infowindow.open(map, marker);
-	    
-	  }); 
-	};
-	google.maps.event.addDomListener(window, 'load', initialize);
-
-	google.maps.event.addDomListener(window, "resize", resizingMap());
-
-	$('#myMapModal').on('show.bs.modal', function() {
-	   //Must wait until the render of the modal appear, thats why we use the resizeMap and NOT resizingMap!! ;-)
-	   resizeMap();
-	})
-
-	function resizeMap() {
-	   if(typeof map =="undefined") return;
-	   setTimeout( function(){resizingMap();} , 400);
-	}
-
-	function resizingMap() {
-	   if(typeof map =="undefined") return;
-	   var center = map.getCenter();
-	   google.maps.event.trigger(map, "resize");
-	   map.setCenter(center); 
-	}
+	$('#myModal').on('shown.bs.modal', function () {
+	$('#myInput').focus()
+})	
 </script>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Nous situer</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.501545358698!2d1.0087589153727599!3d48.46609263620238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c1f06011b77f%3A0xc382764b99c6e0a!2sH%C3%B4pital+Local!5e0!3m2!1sfr!2sfr!4v1456821011813" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <header id="branding" role="banner">
 <?php

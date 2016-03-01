@@ -1189,7 +1189,7 @@ a {
 }
 
 .wvrx-menu * {          /* can't be on plain .wvrx-menu - breaks rounded */
-	margin-left:			160px;
+	margin-left:			4em;
 }
 
 
@@ -1229,7 +1229,9 @@ ul.wvrx-menu {
 .wvrx-menu a {
 	text-decoration:		none;
 	position:				relative;
-	padding:				0.6em .75em;       /* The 0.6em interacts with 0.35em on arrow rules */
+	border-radius: 30px;
+	padding-left: 1.75em !important;
+	padding-right: 1.75em !important;       /* The 0.6em interacts with 0.35em on arrow rules */
 }
 
 
@@ -1438,7 +1440,8 @@ ul.wvrx-menu {
 	box-sizing:			border-box;
 	line-height:		1;
 	margin:				0;
-	padding:			0;
+	padding-top:			1em;
+	padding-bottom: 1em;
 	font-family:		inherit;
 	text-align:			left;
 	background-color:   #111;           /* bg color of menu_bar */
@@ -1521,7 +1524,7 @@ ul.wvrx-menu {
 
 
 .is-menu-default .wvrx-menu > li {
-	display:		inline-block;
+	display:		inline-grid;
 	float:          left;
 	
 }
@@ -4495,45 +4498,26 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 .bx-controls-direction {
 	display: none;
 }
-
+.header_button {
+    width: 200px !important;
+    height: 35px !important;
+    position: absolute !important;
+    left: 80% !important;
+    z-index: 1 !important;
+    -webkit-border-radius: 40px !important;
+	-moz-border-radius: 40px !important;
+	border-radius: 40px !important;
+	background-color: #E2EFF8 !important;
+	text-align: center !important;	
+}
 .first_button {
-    width: 200px;
-    height: 35px;
-    position: absolute;
-    left: 80%;
-    top: 3%;
-    z-index: 1;
-    -webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-	background-color: #E2EFF8;
-	text-align: center;
+    top: 3% !important;
 }
 .second_button {
-    width: 200px;
-    height: 35px;
-    position: absolute;
-    left: 80%;
-    top: 6%;
-    z-index: 1;
-    -webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-	background-color: #E2EFF8;
-	text-align: center;
+    top: 6% !important;
 }
 .third_button {
-    width: 200px;
-    height: 35px;
-    position: absolute;
-    left: 80%;
-    top: 9%;
-    z-index: 1;
-    -webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-	background-color: #E2EFF8;
-	text-align: center;
+    top: 9% !important;
 }
 
 html, body, #map-canvas  {
@@ -4547,10 +4531,27 @@ html, body, #map-canvas  {
   height:480px;
 }
 
-.is-menu-default .wvrx-menu > li {
-	display: inline-grid;
+.menu-arrows li:before {
+    /*
+    The desired width gets defined in two places: The element width, and background size.
+    The height only gets defined once, in background size.
+    */
+    position: absolute;
+    display: block;
+    content: '\2022';
+    text-indent: -999999px;
+    left: -1.75em;
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-image: url('https://d30y9cdsu7xlg0.cloudfront.net/png/129028-200.png');
+    background-size: 1em 1em;
+    background-position: 0em 0.6em;
 }
 
-.menu-arrows li {
-	list-style-image: url('https://d30y9cdsu7xlg0.cloudfront.net/png/129028-200.png')
+.bx-viewport img {
+	height: 260px;
 }
+
+
+
