@@ -151,23 +151,7 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 		<input type="submit" class="search-submit" value="Rechercher">
 	</form>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Nous situer</h4>
-      </div>
-      <div class="modal-body">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.501545358698!2d1.0087589153727599!3d48.46609263620238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c1f06011b77f%3A0xc382764b99c6e0a!2sH%C3%B4pital+Local!5e0!3m2!1sfr!2sfr!4v1456821011813" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <script type="text/javascript">
 	$('#myModal').on('shown.bs.modal', function () {
