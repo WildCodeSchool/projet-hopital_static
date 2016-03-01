@@ -1189,7 +1189,7 @@ a {
 }
 
 .wvrx-menu * {          /* can't be on plain .wvrx-menu - breaks rounded */
-	margin-left:			4em;
+	margin-left:			160px;
 }
 
 
@@ -1229,9 +1229,7 @@ ul.wvrx-menu {
 .wvrx-menu a {
 	text-decoration:		none;
 	position:				relative;
-	border-radius: 30px;
-	padding-left: 1.75em !important;
-	padding-right: 1.75em !important;       /* The 0.6em interacts with 0.35em on arrow rules */
+	padding:				0.6em .75em;       /* The 0.6em interacts with 0.35em on arrow rules */
 }
 
 
@@ -1440,8 +1438,7 @@ ul.wvrx-menu {
 	box-sizing:			border-box;
 	line-height:		1;
 	margin:				0;
-	padding-top:			1em;
-	padding-bottom: 1em;
+	padding:			0;
 	font-family:		inherit;
 	text-align:			left;
 	background-color:   #111;           /* bg color of menu_bar */
@@ -1524,7 +1521,7 @@ ul.wvrx-menu {
 
 
 .is-menu-default .wvrx-menu > li {
-	display:		inline-grid;
+	display:		inline-block;
 	float:          left;
 	
 }
@@ -3839,7 +3836,7 @@ dl.gallery-item {
 }
 
 #secondary-widget-area{
-		height: 20em;
+		height: 300px;
 		overflow-y: scroll;
 }
 #primary-widget-area,
@@ -4492,46 +4489,51 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 
 	body {
 	}
-
-	first_button{
-		top: 1% 
-		width: 150px !important;
-    	height: 35px !important;
-    	position: absolute !important;
-    	left: 80% !important;
-    	z-index: 1 !important;
-    	-webkit-border-radius: 40px !important;
-		-moz-border-radius: 40px !important;
-		border-radius: 40px !important;
-		background-color: #E2EFF8 !important;
-		text-align: center !important;	
-	}
 }
 /* The End */
 
 .bx-controls-direction {
 	display: none;
 }
-.header_button {
-    width: 200px !important;
-    height: 35px !important;
-    position: absolute !important;
-    left: 80% !important;
-    z-index: 1 !important;
-    -webkit-border-radius: 40px !important;
-	-moz-border-radius: 40px !important;
-	border-radius: 40px !important;
-	background-color: #E2EFF8 !important;
-	text-align: center !important;	
-}
+
 .first_button {
-    top: 3% !important;
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    left: 80%;
+    top: 3%;
+    z-index: 1;
+    -webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	background-color: #E2EFF8;
+	text-align: center;
 }
 .second_button {
-    top: 6% !important;
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    left: 80%;
+    top: 6%;
+    z-index: 1;
+    -webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	background-color: #E2EFF8;
+	text-align: center;
 }
 .third_button {
-    top: 9% !important;
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    left: 80%;
+    top: 9%;
+    z-index: 1;
+    -webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	background-color: #E2EFF8;
+	text-align: center;
 }
 
 html, body, #map-canvas  {
@@ -4545,27 +4547,10 @@ html, body, #map-canvas  {
   height:480px;
 }
 
-.menu-arrows li:before {
-    /*
-    The desired width gets defined in two places: The element width, and background size.
-    The height only gets defined once, in background size.
-    */
-    position: absolute;
-    display: block;
-    content: '\2022';
-    text-indent: -999999px;
-    left: -1.75em;
-    width: 2em;
-    height: 2em;
-    background-repeat: no-repeat;
-    background-image: url('https://d30y9cdsu7xlg0.cloudfront.net/png/129028-200.png');
-    background-size: 1em 1em;
-    background-position: 0em 0.6em;
+.is-menu-default .wvrx-menu > li {
+	display: inline-grid;
 }
 
-.bx-viewport img {
-	height: 260px;
+.menu-arrows li {
+	list-style-image: url('https://d30y9cdsu7xlg0.cloudfront.net/png/129028-200.png')
 }
-
-
-
