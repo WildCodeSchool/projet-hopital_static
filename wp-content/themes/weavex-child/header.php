@@ -36,7 +36,6 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 <!-- Jquery -->
 <script src="wp-content/themes/weavex-child/assets/js/jquery-2.2.1.min.js"></script>
 <script src="wp-content/themes/weavex-child/assets/js/bootstrap.min.js"></script>
-<script src="wp-content/themes/weavex-child/assets/js/npm.js"></script>
 
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <?php
