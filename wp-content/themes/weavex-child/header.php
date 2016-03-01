@@ -136,7 +136,7 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 	$title =  apply_filters('weaverx_site_title', esc_html(get_bloginfo( 'name', 'display' ) ) );
 ?>
 
-	<button class="header_button first_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
+	<button class="header_button first_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
 		Nous situer
 	</button>
 	
@@ -151,74 +151,28 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 		<input type="submit" class="search-submit" value="Rechercher">
 	</form>
 
-	<div class="modal fade" id="myMapModal">
-	    <div class="modal-dialog">
-	        <div class="modal-content">
-	            <div class="modal-header">
-	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-	                 <h4 class="modal-title">Nous situer</h4>
-
-	            </div>
-	            <div class="modal-body">
-	                <div class="container">
-	                    <div class="row">
-	                        <div id="map-canvas" class=""></div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <!-- /.modal-content -->
-	    </div>
-    <!-- /.modal-dialog -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Nous situer</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.501545358698!2d1.0087589153727599!3d48.46609263620238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c1f06011b77f%3A0xc382764b99c6e0a!2sH%C3%B4pital+Local!5e0!3m2!1sfr!2sfr!4v1456821011813" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
-    <!-- /.modal -->
+  </div>
+</div>
 
 <script type="text/javascript">
-		var map;        
-	    var myCenter=new google.maps.LatLng(48.466089, 1.010948);
-		var marker=new google.maps.Marker({
-	    position:myCenter
-	});
-
-	function initialize() {
-	  var mapProp = {
-	      center:myCenter,
-	      zoom: 14,
-	      draggable: false,
-	      scrollwheel: false,
-	      mapTypeId:google.maps.MapTypeId.ROADMAP
-	  };
-	  
-	  map=new google.maps.Map(document.getElementById("map-canvas"),mapProp);
-	  marker.setMap(map);
-	    
-	  google.maps.event.addListener(marker, 'click', function() {
-	      
-	    infowindow.setContent(contentString);
-	    infowindow.open(map, marker);
-	    
-	  }); 
-	};
-	google.maps.event.addDomListener(window, 'load', initialize);
-
-	google.maps.event.addDomListener(window, "resize", resizingMap());
-
-	$('#myMapModal').on('show.bs.modal', function() {
-	   //Must wait until the render of the modal appear, thats why we use the resizeMap and NOT resizingMap!! ;-)
-	   resizeMap();
-	})
-
-	function resizeMap() {
-	   if(typeof map =="undefined") return;
-	   setTimeout( function(){resizingMap();} , 400);
-	}
-
-	function resizingMap() {
-	   if(typeof map =="undefined") return;
-	   var center = map.getCenter();
-	   google.maps.event.trigger(map, "resize");
-	   map.setCenter(center); 
-	}
+	$('#myModal').on('shown.bs.modal', function () {
+	$('#myInput').focus()
+})	
 </script>
 
 <header id="branding" role="banner">
