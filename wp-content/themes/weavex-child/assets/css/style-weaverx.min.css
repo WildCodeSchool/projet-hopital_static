@@ -4499,7 +4499,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 .first_button {
     width: 200px;
     height: 35px;
-    position: absolute;
+    position: relative;
     left: 80%;
     top: 3%;
     z-index: 1;
