@@ -26,18 +26,17 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 <!--[if !(IE 8) | !(IE 9) ]><!-->	<html <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 
-<!-- Jquery -->
-<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="wp-content/themes/weavex-child/assets/css/bootstrap.min.css">
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link rel="stylesheet" href="wp-content/themes/weavex-child/assets/css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- Jquery -->
+<script src="wp-content/themes/weavex-child/assets/js/jquery-2.2.1.min.js"></script>
+<script src="wp-content/themes/weavex-child/assets/js/bootstrap.min.js"></script>
+<script src="wp-content/themes/weavex-child/assets/js/npm.js"></script>
 
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <?php
