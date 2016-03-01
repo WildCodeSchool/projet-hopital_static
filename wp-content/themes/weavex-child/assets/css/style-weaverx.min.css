@@ -4489,6 +4489,47 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 
 	body {
 	}
+	.first_button {
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    z-index: 1;
+    -webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	background-color: #E2EFF8;
+	text-align: center;
+}
+.second_button {
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    z-index: 1;
+    -webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	background-color: #E2EFF8;
+	text-align: center;
+}
+
+.third_button {
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 1;
+    -webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	background-color: #E2EFF8;
+	text-align: center;
+}
+
 }
 /* The End */
 
@@ -4499,7 +4540,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 .first_button {
     width: 200px;
     height: 35px;
-    position: relative;
+    position: absolute;
     left: 80%;
     top: 3%;
     z-index: 1;
@@ -4512,7 +4553,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 .second_button {
     width: 200px;
     height: 35px;
-    position: relative;
+    position: absolute;
     left: 80%;
     top: 6%;
     z-index: 1;
@@ -4525,7 +4566,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 .third_button {
     width: 200px;
     height: 35px;
-    position: relative;
+    position: absolute;
     left: 80%;
     top: 9%;
     z-index: 1;
