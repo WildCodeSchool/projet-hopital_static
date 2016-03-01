@@ -4581,7 +4581,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
     width: 200px !important;
     height: 35px !important;
     position: absolute !important;
-    left: 80% !important;
+    left: 80%;
     z-index: 1 !important;
     -webkit-border-radius: 40px !important;
 	-moz-border-radius: 40px !important;
