@@ -4581,7 +4581,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
     width: 200px !important;
     height: 35px !important;
     position: absolute !important;
-    float: right;
+    left: 80% !important;
     z-index: 1 !important;
     -webkit-border-radius: 40px !important;
 	-moz-border-radius: 40px !important;
@@ -4632,8 +4632,10 @@ html, body, #map-canvas  {
 	height: 260px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 767px) and (max-width: 1200px) {
 	first_button, second_button {
+		left: 60%;
+		width: 20%;
 
 	}
 }
