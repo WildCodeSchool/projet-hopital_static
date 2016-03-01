@@ -151,6 +151,13 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 		<input type="submit" class="search-submit" value="Rechercher">
 	</form>
 
+<!-- Script modal -->
+<script type="text/javascript">
+	$('#myModal').on('shown.bs.modal', function () {
+	$('#myInput').focus()
+})	
+</script>
+
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -168,12 +175,6 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
     </div>
   </div>
 </div>
-
-<script type="text/javascript">
-	$('#myModal').on('shown.bs.modal', function () {
-	$('#myInput').focus()
-})	
-</script>
 
 <header id="branding" role="banner">
 <?php
