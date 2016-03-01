@@ -4567,3 +4567,10 @@ html, body, #map-canvas  {
     background-size: 1em 1em;
     background-position: 0em 0.6em;
 }
+
+.bx-viewport img {
+	height: 260px;
+}
+
+
+
