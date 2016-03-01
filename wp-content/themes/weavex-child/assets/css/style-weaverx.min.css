@@ -4498,45 +4498,26 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 .bx-controls-direction {
 	display: none;
 }
-
+.header_button {
+    width: 200px !important;
+    height: 35px !important;
+    position: absolute !important;
+    left: 80% !important;
+    z-index: 1 !important;
+    -webkit-border-radius: 40px !important;
+	-moz-border-radius: 40px !important;
+	border-radius: 40px !important;
+	background-color: #E2EFF8 !important;
+	text-align: center !important;	
+}
 .first_button {
-    width: 200px;
-    height: 35px;
-    position: absolute;
-    left: 80%;
-    top: 3%;
-    z-index: 1;
-    -webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-	background-color: #E2EFF8;
-	text-align: center;
+    top: 3% !important;
 }
 .second_button {
-    width: 200px;
-    height: 35px;
-    position: absolute;
-    left: 80%;
-    top: 6%;
-    z-index: 1;
-    -webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-	background-color: #E2EFF8;
-	text-align: center;
+    top: 6% !important;
 }
 .third_button {
-    width: 200px;
-    height: 35px;
-    position: absolute;
-    left: 80%;
-    top: 9%;
-    z-index: 1;
-    -webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-	background-color: #E2EFF8;
-	text-align: center;
+    top: 9% !important;
 }
 
 html, body, #map-canvas  {

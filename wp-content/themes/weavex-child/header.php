@@ -136,17 +136,17 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 	$title =  apply_filters('weaverx_site_title', esc_html(get_bloginfo( 'name', 'display' ) ) );
 ?>
 
-	<button class="first_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
+	<button class="header_button first_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
 		Nous situer
 	</button>
 	
-	<button class="second_button" type="button" class="btn btn-primary btn-lg">
+	<button class="header_button second_button" type="button" class="btn btn-primary btn-lg">
 		Nous contacter
 	</button>
 	
 	<form role="search" method="get" class="search-form" action="http://80.67.190.170/projet-hopital_static/">
 		<label>
-			<input type="search" class="third_button" placeholder="Recherche…" value="" name="s" title="Rechercher&nbsp;:">
+			<input type="search" class="header_button third_button" placeholder="Recherche…" value="" name="s" title="Rechercher&nbsp;:">
 		</label>
 		<input type="submit" class="search-submit" value="Rechercher">
 	</form>
