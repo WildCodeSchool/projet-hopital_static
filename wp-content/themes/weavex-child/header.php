@@ -29,9 +29,6 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="wp-content/themes/weavex-child/assets/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="wp-content/themes/weavex-child/assets/css/bootstrap-theme.min.css">
-
 <!-- Latest compiled and minified JavaScript -->
 <!-- Jquery -->
 <script src="wp-content/themes/weavex-child/assets/js/jquery-2.2.1.min.js"></script>
