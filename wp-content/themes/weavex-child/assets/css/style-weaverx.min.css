@@ -4512,7 +4512,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 .second_button {
     width: 200px;
     height: 35px;
-    position: absolute;
+    position: relative;
     left: 80%;
     top: 6%;
     z-index: 1;
@@ -4525,7 +4525,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 .third_button {
     width: 200px;
     height: 35px;
-    position: absolute;
+    position: relative;
     left: 80%;
     top: 9%;
     z-index: 1;
