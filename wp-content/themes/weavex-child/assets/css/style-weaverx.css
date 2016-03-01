@@ -3838,7 +3838,7 @@ dl.gallery-item {
 
 
 #secondary-widget-area{
-	height: 300px;
+	height: 45%;
 	overflow-y: scroll;
 }
 #primary-widget-area,
