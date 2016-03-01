@@ -137,7 +137,7 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 ?>
 
 	<button class="first_button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myMapModal">
-		</p><span class="glyphicon glyphicon-search"></span></p>Nous situer
+		</p>Nous situer
 	</button>
 	
 	<button class="second_button" type="button" class="btn btn-primary btn-lg">
