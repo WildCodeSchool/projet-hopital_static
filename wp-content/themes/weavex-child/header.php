@@ -151,6 +151,7 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 		<input type="submit" class="search-submit" value="Rechercher">
 	</form>
 
+
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
