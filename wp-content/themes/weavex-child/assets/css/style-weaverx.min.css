@@ -4492,6 +4492,20 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 
 	body {
 	}
+
+	first_button{
+		top: 1% 
+		width: 150px !important;
+    	height: 35px !important;
+    	position: absolute !important;
+    	left: 80% !important;
+    	z-index: 1 !important;
+    	-webkit-border-radius: 40px !important;
+		-moz-border-radius: 40px !important;
+		border-radius: 40px !important;
+		background-color: #E2EFF8 !important;
+		text-align: center !important;	
+	}
 }
 /* The End */
 
