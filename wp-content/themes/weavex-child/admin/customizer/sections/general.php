@@ -30,6 +30,9 @@ function weaverx_customizer_define_general_sections( $sections ) {
 	// Reset priorities on Tagline control
 	$wp_customize->get_control( 'blogdescription' )->priority = 14;
 
+	// Add link google
+	$wp_customize->get_control( 'link_map' )->priority = 14;
+
 	/**
 	 * Static Front Page
 	 */
