@@ -4501,8 +4501,8 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 	display: none;
 }
 .header_button {
-    width: 200px ;
-    height: 35px ;
+    width: 35% ;
+    height: 1% ;
     position: absolute;
     right: 5%;
     z-index: 1 ;
