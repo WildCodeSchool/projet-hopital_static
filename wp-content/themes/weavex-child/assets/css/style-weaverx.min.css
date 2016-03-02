@@ -4495,83 +4495,6 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 	}
 }
 
-@media (max-width:320px){
-
-.first_button {
-    width: 100%;
-    height: 20%;
-    position: absolute;
-    right: 5%;
-    top: 1%;
-    z-index: 1;
-    -webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-	background-color: #E2EFF8;
-	text-align: center;
-}
-
-.second_button {
-    width: 100px;
-    height: 35px;
-    position: absolute;
-    right: 5%;
-    top: 3%;
-    z-index: 1;
-    -webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-	background-color: #E2EFF8;
-	text-align: center;
-}
-
-.third_button {
-    width: 100px;
-    height: 35px;
-    position: absolute;
-    right: 5%;
-    top: 5%;
-    z-index: 1;
-    -webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-	background-color: #E2EFF8;
-	text-align: center;
-}
-}
-@media (min-width:321px) and (max-width:767px) {
-.first_button, .second_button {
-    width: 100px;
-    height: 35px;
-    position: absolute;
-    right: 5%;
-    top: 1%;
-    z-index: 1;
-    -webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-	background-color: #E2EFF8;
-	text-align: center;
-}
-
-
-
-.third_button {
-    width: 100px;
-    height: 35px;
-    position: absolute;
-    right: 5%;
-    top: 5%;
-    z-index: 1;
-    -webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-	background-color: #E2EFF8;
-	text-align: center;
-}
-}
-
-
 /* The End */
 
 .bx-controls-direction {
@@ -4633,6 +4556,50 @@ html, body, #map-canvas  {
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
 	first_button, second_button {
+		left: 60%;
+		width: 20%;
+
+	}
+	second_button, second_button {
+		left: 60%;
+		width: 20%;
+
+	}
+	third_button, second_button {
+		left: 60%;
+		width: 20%;
+
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 766px) {
+	first_button, second_button {
+		left: 60%;
+		width: 20%;
+
+	}
+	second_button, second_button {
+		left: 60%;
+		width: 20%;
+
+	}
+	third_button, second_button {
+		left: 60%;
+		width: 20%;
+
+	}
+}
+@media screen and (min-width: 1201px) {
+	first_button, second_button {
+		left: 60%;
+		width: 20%;
+
+	}
+	second_button, second_button {
+		left: 60%;
+		width: 20%;
+
+	}
+	third_button, second_button {
 		left: 60%;
 		width: 20%;
 
