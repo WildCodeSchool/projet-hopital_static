@@ -61,17 +61,9 @@ if ( !defined('ABSPATH')) exit; // Exit if accessed directly
 		}
 		?>
 		</span> <!-- #site-info -->
-		<?php
-		if (! weaverx_getopt('_hide_poweredby')) { ?>
-			<span id="site-generator">
-			<a href="<?php echo esc_url( __( '//wordpress.org/','weaver-xtreme') ); ?>" title="wordpress.org" target="_blank" rel="nofollow"><?php printf( __( 'Proudly powered by %s','weaver-xtreme'), 'WordPress' ); ?></a> -
-			<?php echo(WEAVERX_THEMENAME); ?> by <?php weaverx_site(''); ?>WeaverTheme</a>
-		</span> <!-- #site-generator -->
-		<?php
-		}
-		weaverx_clear_both('site-generator'); ?>
-		</div><!-- #site-ig-wrap -->
-		<?php weaverx_clear_both('site-ig-wrap'); ?>
+		<div>
+			<p text-align="right"><B>Réalisé</B> par Mélanie Gourpil, Manuel Martinez et Quentin Gallois</p>
+		</div>
 </footer><!-- #colophon -->
 <?php
 	weaverx_clear_both('colophon');
