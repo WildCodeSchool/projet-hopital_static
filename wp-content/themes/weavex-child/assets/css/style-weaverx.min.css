@@ -4513,13 +4513,13 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 	text-align: center !important;	
 }
 .first_button {
-    top: 3% !important;
+    top: 3%;
 }
 .second_button {
-    top: 6% !important;
+    top: 6%;
 }
 .third_button {
-    top: 9% !important;
+    top: 9%;
 }
 
 html, body, #map-canvas  {
