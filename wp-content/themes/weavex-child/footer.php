@@ -62,7 +62,7 @@ if ( !defined('ABSPATH')) exit; // Exit if accessed directly
 		?>
 		</span> <!-- #site-info -->
 		<div>
-			<p text-align="right"><B>Réalisé</B> par Manuel Martinez, Mélanie Gourpil et Quentin Gallois</p>
+			<p text-align="right"><B>Réalisé</B> par Mélanie Gourpil, Manuel Martinez et Quentin Gallois</p>
 		</div>
 </footer><!-- #colophon -->
 <?php
