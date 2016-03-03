@@ -3443,7 +3443,7 @@ dl.gallery-item {
 .m-widget-smart-rm aside,
 .is-mobile .m-widget-smart-rm aside,
 .ie8 .smart-rm {                    /* modern browsers use nth-of-type rules below */
-	margin-left:    0;
+	margin-left:    25%;
 	margin-right:   1%;
 }
 
