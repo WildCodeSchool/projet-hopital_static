@@ -4498,7 +4498,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 /* The End */
 
 .bx-controls-direction {
-	display: none;http://80.67.190.170/projet-hopital_static/?page_id=399
+	display: none;
 }
 .header_button {
     width: 200px ;
@@ -4514,14 +4514,17 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 .first_button {
 	bottom: 241px;
 	float: right;
+	right: 101px;
 }
 .second_button {
-	bottom: 178px;
+	bottom: 170px;
 	float: right;
+	right: -102px;
 }
 .third_button {
-	bottom: 153px;
+    bottom: 103px;
     float: right;
+    right: -300px;
 }
 
 .menu-arrows li:before {
