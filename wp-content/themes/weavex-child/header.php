@@ -138,9 +138,9 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 		Nous situer
 	</button>
 	
-	<button class="header_button second_button" type="button" class="btn btn-primary btn-lg">
-		<a href="http://80.67.190.170/projet-hopital_static/?page_id=399">Nous contacter</a>
-	</button>
+	<a href="http://80.67.190.170/projet-hopital_static/?page_id=399"><button class="header_button second_button" type="button" class="btn btn-primary btn-lg">
+		Nous contacter
+	</button></a>
 	
 	<form role="search" method="get" class="search-form" action="http://80.67.190.170/projet-hopital_static/">
 		<label>
