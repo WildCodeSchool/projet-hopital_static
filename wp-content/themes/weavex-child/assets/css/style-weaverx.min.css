@@ -3443,7 +3443,7 @@ dl.gallery-item {
 .m-widget-smart-rm aside,
 .is-mobile .m-widget-smart-rm aside,
 .ie8 .smart-rm {                    /* modern browsers use nth-of-type rules below */
-	margin-left:    0;
+	margin-left:    25%;
 	margin-right:   1%;
 }
 
@@ -4503,8 +4503,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 .header_button {
     width: 200px ;
     height: 35px ;
-    position: absolute;
-    right: 5%;
+    position: relative;
     z-index: 1 ;
     -webkit-border-radius: 40px ;
 	-moz-border-radius: 40px;
@@ -4513,25 +4512,18 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 	text-align: center;	
 }
 .first_button {
-    top: 3%;
+	bottom: 241px;
+	float: right;
 }
 .second_button {
-    top: 6%;
+	bottom: 178px;
+	float: right;
 }
 .third_button {
-    top: 9%;
+	bottom: 153px;
+    float: right;
 }
 
-html, body, #map-canvas  {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-#map-canvas {
-  width:500px;
-  height:480px;
-}
 .menu-arrows li:before {
     /*
     The desired width gets defined in two places: The element width, and background size.
