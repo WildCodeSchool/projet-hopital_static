@@ -4521,19 +4521,9 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 }
 .third_button {
 	bottom: 153px;
-    left: 73%;
+    left: 424%;
 }
 
-html, body, #map-canvas  {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-#map-canvas {
-  width:500px;
-  height:480px;
-}
 .menu-arrows li:before {
     /*
     The desired width gets defined in two places: The element width, and background size.
