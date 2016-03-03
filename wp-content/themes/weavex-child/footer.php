@@ -142,13 +142,13 @@ if ( !defined('ABSPATH')) exit; // Exit if accessed directly
 ?>
 <script>
 function bigImg(x) {
-    x.style.height = "300px";
-    x.style.width = "419px";
+    x.style.height = "219px";
+    x.style.width = "300px";
 }
 
 function normalImg(x) {
-    x.style.height = "219px";
-    x.style.width = "300px";
+    x.style.height = "150px";
+    x.style.width = "200px";
 }
 </script>
 </body>
