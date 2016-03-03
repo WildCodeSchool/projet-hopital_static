@@ -4498,12 +4498,13 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 /* The End */
 
 .bx-controls-direction {
-	display: none;
+	display: none;http://80.67.190.170/projet-hopital_static/?page_id=399
 }
 .header_button {
     width: 200px ;
     height: 35px ;
-    position: relative;
+    position: absolute;
+    right: 5%;
     z-index: 1 ;
     -webkit-border-radius: 40px ;
 	-moz-border-radius: 40px;
@@ -4512,7 +4513,6 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 	text-align: center;	
 }
 .first_button {
-<<<<<<< HEAD
     top: 3%;
 }
 .second_button {
@@ -4526,27 +4526,6 @@ html, body, #map-canvas  {
   margin: 0;
   padding: 0;
   height: 100%;
-=======
-	bottom: 241px;
-	float: right;
-	right: 101px;
-}
-.first_button {
-	bottom: 230px;
-	float: right;
-	right: 20px;
-}
-
-.second_button {
-	bottom: 170px;
-	float: right;
-	right: -175px;
-}
-.third_button {
-    bottom: 103px;
-    float: right;
-    right: -375px;
->>>>>>> 98eed6c40dff52b8f4ee05965de4c3ac4aadfff9
 }
 
 #map-canvas {
