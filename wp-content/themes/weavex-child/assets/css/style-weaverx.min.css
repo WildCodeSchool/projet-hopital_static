@@ -4532,15 +4532,21 @@ html, body, #map-canvas  {
 	float: right;
 	right: 101px;
 }
-.second_button {
+.first_button {
 	bottom: 170px;
 	float: right;
 	right: -102px;
 }
+
+.second_button {
+	bottom: 170px;
+	float: right;
+	right: 30px;
+}
 .third_button {
-    bottom: 103px;
+    bottom: 170px;
     float: right;
-    right: -300px;
+    right: 30px;
 >>>>>>> 98eed6c40dff52b8f4ee05965de4c3ac4aadfff9
 }
 
