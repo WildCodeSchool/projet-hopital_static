@@ -140,5 +140,16 @@ if ( !defined('ABSPATH')) exit; // Exit if accessed directly
 		weaverx_debug_comment ('Page generated in: '. round($end_time-$GLOBALS['wvrx_timer'], 3) . ' seconds.');
 	}
 ?>
+<script>
+function bigImg(x) {
+    x.style.height = "64px";
+    x.style.width = "64px";
+}
+
+function normalImg(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
+}
+</script>
 </body>
 </html>
