@@ -16,7 +16,7 @@ if ($cols == '')
 if ($cols != '' && $cols != '1')
 	$pclass .= " cols-{$cols}";
 ?>
- <article id="post-<?php the_ID(); ?>" <?php post_class($pclass); ?>
+ <article id="post-<?php the_ID(); ?>" <?php post_class($pclass); ?>>
 	<div class="entry-content clearfix"> 
 
 <?php weaverx_the_page_content( 'page' );
