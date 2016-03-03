@@ -4513,15 +4513,15 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 }
 .first_button {
 	bottom: 241px;
-	left: 73%;
+	float: right;
 }
 .second_button {
 	bottom: 178px;
-	left: 56%
+	float: right;
 }
 .third_button {
 	bottom: 153px;
-    left: 424%;
+    float: right;
 }
 
 .menu-arrows li:before {
