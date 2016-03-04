@@ -4533,6 +4533,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
     bottom: 111px;
     float: right;
     right: -352px;
+    position: relative;
 }
 .menu-arrows li:before {
     /*
