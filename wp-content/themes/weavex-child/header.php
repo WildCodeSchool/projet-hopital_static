@@ -144,11 +144,8 @@ if (function_exists('weaverx_ts_pp_switch'))	// switching to alternate theme?
 	</button></a>
 	
 	<form role="search" method="get" class="search-form" action="http://80.67.190.170/projet-hopital_static/">
-		<label class="" >
-			<input type="search" class="header_button third_button" placeholder="Recherche…" value="" name="s" title="Rechercher&nbsp;:">
-			<input type="submit" class="search-submit" value="Rechercher">
-		</label>
-		
+		<input type="search" class="header_button third_button" placeholder="Recherche…" value="" name="s" title="Rechercher&nbsp;:">
+		<input type="submit" class="search-submit" value="Rechercher">
 	</form>
 
 <!-- Script modal -->
