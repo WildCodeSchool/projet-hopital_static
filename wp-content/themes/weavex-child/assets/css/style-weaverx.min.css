@@ -4530,7 +4530,9 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
     background-color: #E2EFF8;
 }
 .search_button{
-
+    bottom: 111px;
+    float: right;
+    right: -352px;
 }
 .menu-arrows li:before {
     /*
