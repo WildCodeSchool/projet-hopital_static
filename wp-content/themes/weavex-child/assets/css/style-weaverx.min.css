@@ -4513,14 +4513,14 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 	text-align: center;	
 }
 .first_button {
-	bottom: 241px;
-	float: right;
-	right: 101px;
+    top: 4%;
+    float: right;
+    right: 4%;
 }
 .second_button {
-	bottom: 170px;
-	float: right;
-	right: -102px;
+    top: 103px;
+    float: right;
+    right: 4%;
 }
 .third_button {
     bottom: 103px;
