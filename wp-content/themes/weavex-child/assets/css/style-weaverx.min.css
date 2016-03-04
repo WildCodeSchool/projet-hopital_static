@@ -4570,24 +4570,89 @@ html, body, #map-canvas  {
 	height: 260px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 766px) {
+@media screen and (min-width: 320px) and (max-width: 360px) {
 	first_button, second_button, third_button{
 		right: 5%;
 		width: 20%;
 	}
+	first_button{
+		top:1%;
+	}
+	second_button{
+		top:2.5%;
+	}
+	third_button {
+		top:4%;
+	}
 }
 
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 361px) and (max-width: 799px) {
 	first_button, second_button, third_button {
 		right: 5%;
 		width: 20%;
 	}
+	first_button{
+		top:1%;
+
+	}
+	second_button{
+		top:3.5%;
+
+	}
+	third_button{
+		top: 6%;
+	}
 }
-
-
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 800px) and (max-width: 980px) {
 	first_button, second_button, third_button {
 		right: 5%;
 		width: 20%;
+	}
+	first_button{
+		top:2%;
+
+	}
+	second_button{
+		top:4.5%;
+
+	}
+	third_button{
+		top: 7%;
+	}
+}
+@media screen and (min-width: 981px) and (max-width: 1099px) {
+	first_button, second_button, third_button {
+		right: 5%;
+		width: 20%;
+	}
+	first_button{
+		top:2.5%;
+
+	}
+	second_button{
+		top:5%;
+
+	}
+	third_button{
+		top: 7.5%;
+	}
+}
+
+
+@media screen and (min-width: 1100px) {
+	first_button, second_button, third_button {
+		right: 5%;
+		width: 20%;
+	}
+	first_button{
+		top:3%;
+
+	}
+	second_button{
+		top:6%;
+
+	}
+	third_button{
+		top: 9%;
 	}
 }
