@@ -4523,9 +4523,11 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
     right: 4%;
 }
 .third_button {
-    bottom: 103px;
+	top: 16%;
     float: right;
-    right: -300px;
+    right: 4%;
+    height: 30px;
+    width: 194px;
 }
 .menu-arrows li:before {
     /*
