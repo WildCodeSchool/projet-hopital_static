@@ -4549,7 +4549,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 	height: 260px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+/*@media screen and (min-width: 320px) and (max-width: 360px) {
 	first_button, second_button, third_button{
 		right: 5%;
 		width: 20%;
@@ -4634,4 +4634,4 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 	third_button{
 		top: 9%;
 	}
-}
+}*/
