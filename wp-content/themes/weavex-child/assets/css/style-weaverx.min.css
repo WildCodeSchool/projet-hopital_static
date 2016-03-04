@@ -4528,6 +4528,10 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
     right: -952px;
     height: 30px;
     width: 194px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: #E2EFF8;
+
 }
 .menu-arrows li:before {
     /*
