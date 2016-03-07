@@ -4598,5 +4598,5 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 }
 
 .l-widget-area-bottom {
-    width: 50%;
+    width: 50% !important;
 }
