@@ -18,15 +18,15 @@ function weaverx_customizer_define_content_sections( $sections ) {
 		'options' => array(
 
 			'content-headsec-heading' => weaverx_cz_heading( __( 'Introductory Help for &lt;HEAD&gt; Section', 'weaver-xtreme' ),
-				__( 'This panel allows you to add HTML to the &lt;HEAD&gt; Section of every page on your site.<br /><br />
-PLEASE NOTE: Only minimal validation is made on the field values, so be careful not to use invalid code. Invalid code is usually harmless, but it can make your site display incorrectly. If your site looks broken after make changes here, please double check that what you entered uses valid HTML or CSS rules.', 'weaver-xtreme' )),
+				__( 'Ce panneau vous autorise à ajouter du HTMl dans la section &lt;HEAD&gt; de chaque page de votre site.<br /><br />
+VEUILLEZ NOTER: Seul les validations minimales sont faite dans les valeurs de champs, faite attention de ne pas utiliser du code invalide . Le code invalide est bien souvent innofensif, mais il peur faire que votre site ne s affiche pas correctement . Si votre site semble ne plus fonctionner aprés les changement que vous avez effectué ici, merci de controler que vous avez entré du code HTML correcte et que vous avez respecter les principes du css.', 'weaver-xtreme' )),
 
 			'head_opts' => weaverx_cz_textarea(__( '&lt;HEAD&gt; Section Content', 'weaver-xtreme' ),
 					/* $description = */ __(
-					'This input area allows you to enter allowed HTML head elements to the &lt;head&gt; section, including &lt;title&gt;, &lt;base&gt;, &lt;link&gt;, &lt;meta&gt;, &lt;script&gt;, and &lt;style&gt;.
-Code entered into this box is included right before the &lt;/head&gt; HTML tag on each page of your site.
-We recommend using dedicated WordPress plugins to add things like ad tracking, SEO tags, Facebook code, and so on.
-<small>Note: You can add CSS Rules using the "Custom CSS Rules" option on the Main Options tab.', 'weaver-xtreme' ),
+					'Cette zone d entrée vous autorise à ecrire du code HTML autorisé dans la section &lt;head&gt; , incluant &lt;title&gt;, &lt;base&gt;, &lt;link&gt;, &lt;meta&gt;, &lt;script&gt;, and &lt;style&gt;.
+Le code ecrit dans cette section est inclu juste avant la section &lt;/head&gt; de votre site.
+Nous vous recommandons d utiliser des plugins WordPress plugins pour ajouter des choses comme ad tracking, le reference naturel, les codes Facebook , etc.
+<small>Note: Vous pouvez ajoutez des feuilles de style  CSS  en utilisant l option  "Modifier le style CSS" dans le tableau des options.', 'weaver-xtreme' ),
 					/* $rows = */ '4', /* $placeholder = */ __('Any HTML allowed in <head>.', 'weaver-xtreme'),
 					/*$refresh = */ 'refresh', /*$plus = */false),
 
@@ -50,12 +50,12 @@ This option is not commonly used, and is intended for more advanced Weaver Xtrem
 			'_phpactions' => weaverx_cz_textarea(
 				__( 'Actions and Filters (&diams;)', 'weaver-xtreme' ),
 				__(
-					'<strong>This Option for Advanced Users!</strong> You can add arbitrary PHP code here. This option is intended to allow
-you to add WordPress Actions and Filters that can affect the Visitor View of your site. This PHP code is executed at the very
-beginning of the theme\'s header.php template file before any HTML is emitted, but after much of WordPress is loaded, so you
-can\'t create filters or actions for all WordPress functions.
-Do NOT bracket the code with &lt;?php and ?&gt; at the beginning and end.
-If your code doesn\'t seem to do anything, you probably have a PHP error. See the Help file for more technical details.', 'weaver-xtreme' ),
+					'<strong> Cette option est pour les utilisateurs avancé!</strong> Vous pouvez pouvez rajouter du code PHP ici. Cette option est prévu pour vous autoriser 
+a ajouter dans WordPress des actions et des filtres qui peuvent affecter la vue du visiteur de votre site. Ce code PHP est exécuté au tout début de l execution du fichier du theme  
+header.php template avant que le HTML ne soit lancé , mais apres que beaucoup de chose de WordPress soit loader, alors vous
+ne pouvez pas créer des filtres ou des actions pour toutes vos fonctions de WordPress .
+Ne mettez pas de crochets &lt;?php and ?&gt; au début et à la fin du code.
+Si votre code semble ne rien faire, vous avez probablement un erreur de PHP . Regardez le fichier d aide pour See the Help file for more technical details.', 'weaver-xtreme' ),
 				'4', __('/* PHP code - typically to define WP actions or filters */', 'weaver-xtreme'),
 				'refresh', true, 'weaverx_cz_sanitize_code'),
 
@@ -73,7 +73,7 @@ If your code doesn\'t seem to do anything, you probably have a PHP error. See th
 		'options' => array(
 
 			'header_html_text'     =>  weaverx_cz_html_textarea(__( 'Header HTML Content', 'weaver-xtreme' ),
-				__( 'Add arbitrary HTML to Header Area (in &lt;div id="header-html"&gt;)', 'weaver-xtreme' ),
+				__( 'Ajouter du HTMl arbitrairement dans la zone du Header (in &lt;div id="header-html"&gt;)', 'weaver-xtreme' ),
 				'4'),
 
 		),
@@ -91,7 +91,7 @@ If your code doesn\'t seem to do anything, you probably have a PHP error. See th
 			'content-mm-heading' => weaverx_cz_group_title( __( 'Primary Menu', 'weaver-xtreme' )),
 
 			'm_primary_html_left' =>  weaverx_cz_textarea(__( 'Left HTML', 'weaver-xtreme' ),
-				__( 'Add HTML to menu bar. Works best with Centered Menu. You can adjust color and top/bottom spacing on the respective panels. (&diams;)', 'weaver-xtreme' ),
+				__( 'Ajouter du HTML dans la barre de to menu. fonctionne mieux avec un Menu centré. Vous pouvez ajuster la couleur et les espacement en haut et en bas dans les panneaux respectif . (&diams;)', 'weaver-xtreme' ),
 				'1', __('Any HTML, including shortcodes.', 'weaver-xtreme'),
 				'postMessage', true),
 
@@ -121,7 +121,7 @@ If your code doesn\'t seem to do anything, you probably have a PHP error. See th
 			'content-xm-heading' => weaverx_cz_group_title( __( 'Extra Menu', 'weaver-xtreme' )),
 
 			'm_extra_html_left' =>  weaverx_cz_textarea(__( 'Left HTML', 'weaver-xtreme' ),
-				__( 'Add HTML to menu bar. Works best with Centered Menu. You can adjust color and top/bottom spacing on the respective panels. (&diams;)', 'weaver-xtreme' ),
+				__( 'Ajouter du HTML dans la barre de to menu. fonctionne mieux avec un Menu centré. Vous pouvez ajuster la couleur et les espacement en haut et en bas dans les panneaux respectif . (&diams;)', 'weaver-xtreme' ),
 				'1', __('Any HTML, including shortcodes.', 'weaver-xtreme'),
 				'postMessage', true),
 
