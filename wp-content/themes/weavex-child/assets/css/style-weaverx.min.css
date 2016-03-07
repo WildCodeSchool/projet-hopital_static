@@ -4596,3 +4596,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 	    position: relative;
 	}
 }
+
+.l-widget-area-bottom {
+    width: 50%;
+}
