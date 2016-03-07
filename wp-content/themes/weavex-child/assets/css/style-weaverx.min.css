@@ -4578,7 +4578,7 @@ html.ie8 .is-desktop .menu-primary:before {display:none;}
 	}
 }
 
-@media screen and (max-width: 417px) {
+@media screen and (max-width: 405px) {
 	.first_button {
 	    bottom: 258px;
 	    float: right;
