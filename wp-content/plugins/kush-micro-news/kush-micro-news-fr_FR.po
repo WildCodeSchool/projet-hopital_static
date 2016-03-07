@@ -1,0 +1,74 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Kush Micro News\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Wed Mar 02 2016 10:13:09 GMT+0100 (CET)\n"
+"PO-Revision-Date: Wed Mar 02 2016 10:39:53 GMT+0100 (CET)\n"
+"Last-Translator: manu <martinez-manuel@neuf.fr>\n"
+"Language-Team: \n"
+"Language: French (France)\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: fr_FR\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#. Name of the plugin
+msgid "Kush Micro News"
+msgstr "Kush Micro News"
+
+#. Description of the plugin
+msgid ""
+"Spread the news in shortest possible way. Use links to refer data and title "
+"to concise it."
+msgstr ""
+"Propager les nouvelles de manière la plus courte possible . Utiliser les "
+"liens pour les rendre le plus concis posible"
+
+#. Author of the plugin
+msgid "Kush Sharma"
+msgstr "Kush Sharma"
+
+#. Author URI of the plugin
+msgid "http://softnuke.com"
+msgstr "http://softnuke.com"
+
+#. URI of the plugin
+msgid "https://github.com/kushsharma/micro-news"
+msgstr "https://github.com/kushsharma/micro-news"
+
+#: /index.php:125
+msgid "Number of news"
+msgstr "Nombre de nouvelles\n"
+
+#: /index.php:140
+msgid "Category"
+msgstr "Categorie"
+
+#: /index.php:148
+msgid "Header"
+msgstr ""
+
+#: /includes/admin.php:44
+msgid "<h4>Number of post cannot left blank, reverted to default.</h4>"
+msgstr ""
+"<h4>Le nombre de post ne peux pas rester blanc , retour au nombre par défaut "
+"</h4>\n"
+" "
+
+#: /includes/admin.php:444
+msgid "New Post Added."
+msgstr "Nouvelle information ajoutée"
+
+#: /includes/admin.php:487
+msgid "Add New"
+msgstr "Ajouter une information"
