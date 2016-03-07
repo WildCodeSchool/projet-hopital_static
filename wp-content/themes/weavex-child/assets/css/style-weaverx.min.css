@@ -459,6 +459,7 @@ h1 {
 	margin-bottom:  0.278em;
 	margin-top:     0.556em;
 	text-align: center;
+	position: absolute;
 }
 
 h2 {
